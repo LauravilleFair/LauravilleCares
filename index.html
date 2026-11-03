@@ -15,6 +15,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css?v=2">
+  <!-- Zeffy's popup donation form. Any link with a zeffy-form-link attribute opens it.
+       If this script fails to load, the link still opens the Zeffy page in a new tab. -->
+  <script defer src="https://zeffy-scripts.s3.ca-central-1.amazonaws.com/embed-form-script.min.js" onload="window.zeffyPopup = true"></script>
+  <script>
+    // Zeffy's script opens the popup but doesn't stop the link, so stop it here to avoid a second tab.
+    document.addEventListener('click', function (e) {
+      var link = e.target.closest('a[zeffy-form-link]');
+      if (link && window.zeffyPopup) e.preventDefault();
+    });
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -58,8 +68,8 @@
             <iframe title="Save the Stage! fundraising progress" src="https://www.zeffy.com/embed/thermometer/save-the-stage-2" allowtransparency="true"></iframe>
           </div>
 
-          <!-- Paste the Zeffy form link here (Zeffy: your form > Share > copy link) -->
-          <a class="btn btn--navy btn--big" href="https://www.zeffy.com/en-US/donation-form/save-the-stage-2" target="_blank" rel="noopener">Give to this project</a>
+          <!-- For a new project, swap "save-the-stage-2" for the new form's name in both links. -->
+          <a class="btn btn--navy btn--big" href="https://www.zeffy.com/en-US/donation-form/save-the-stage-2" zeffy-form-link="https://www.zeffy.com/embed/donation-form/save-the-stage-2?modal=true" target="_blank" rel="noopener">Give to this project</a>
           <p class="fine">Tax-deductible. Secure checkout through Zeffy.</p>
         </div>
 

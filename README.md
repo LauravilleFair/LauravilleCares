@@ -11,7 +11,7 @@ The progress bar is Zeffy's embedded thermometer, so it updates itself after eve
 ## Starting a new project
 
 1. Under **PAST PROJECTS**, copy the card template, fill it in for the finished project, and delete the "first project" note.
-2. Under **CURRENT PROJECT**, replace the title, photo, intro, story, and budget. Swap the old Zeffy form name (e.g. `save-the-stage-2`) for the new one in both the thermometer and the "Give" button.
+2. Under **CURRENT PROJECT**, replace the title, photo, intro, story, and budget. Swap the old Zeffy form name (e.g. `save-the-stage-2`) for the new one in the thermometer and in both links on the "Give" button.
 3. Put photos in `assets/images/projects/`. Keep them under ~300 KB (WebP or JPG around 1200px wide).
 
 Anything highlighted in yellow (`class="todo"`) still needs real content.
