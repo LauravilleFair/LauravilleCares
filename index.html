@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css?v=1">
+  <link rel="stylesheet" href="assets/css/styles.css?v=2">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -52,14 +52,10 @@
           <h1>Save the Stage!</h1>
           <p class="lede">For decades, one stage has been part of Lauraville&rsquo;s celebrations. Help us buy it, restore it, and keep it serving the whole neighborhood.</p>
 
-          <!-- PROGRESS: update data-raised (and data-donors) after checking Zeffy.
-               Numbers only, no $ or commas. -->
-          <div class="progress" data-raised="0" data-goal="7500" data-donors="0">
-            <div class="progress__nums">
-              <b data-raised-text>$0</b> raised of <span data-goal-text>$7,500</span>
-            </div>
-            <div class="progress__bar" role="progressbar" aria-label="Amount raised" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
-            <div class="progress__meta"><span data-donors-text>Be the first to give</span><span>Updated Nov 3</span></div>
+          <!-- PROGRESS: Zeffy's thermometer updates itself after every donation.
+               For a new project, swap "save-the-stage-2" for the new form's name. -->
+          <div class="thermometer">
+            <iframe title="Save the Stage! fundraising progress" src="https://www.zeffy.com/embed/thermometer/save-the-stage-2" allowtransparency="true"></iframe>
           </div>
 
           <!-- Paste the Zeffy form link here (Zeffy: your form > Share > copy link) -->
@@ -164,6 +160,5 @@
     </div>
   </footer>
 
-  <script src="assets/js/main.js?v=1"></script>
 </body>
 </html>
