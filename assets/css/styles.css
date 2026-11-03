@@ -1,0 +1,105 @@
+/* ===== Lauraville Cares — styles (colors match thelauravillefair.org) ===== */
+:root {
+  --navy: #0f3f5e;
+  --navy-deep: #0a2c43;
+  --navy-soft: #e7eef3;
+  --butter: #f6f0a6;
+  --butter-deep: #e9dd6a;
+  --ink: #1d2a33;
+  --muted: #5a6872;
+  --paper: #fbfaf5;
+  --line: #dfe3e2;
+  --radius: 14px;
+  --shadow: 0 6px 24px rgba(10, 44, 67, .10);
+  --max: 1120px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font: 400 1.0625rem/1.65 "Inter", system-ui, sans-serif; color: var(--ink); background: var(--paper); }
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--navy); }
+h1, h2, h3 { font-family: "Poppins", system-ui, sans-serif; line-height: 1.2; color: var(--navy-deep); margin: 0 0 .5em; }
+h1 { font-size: clamp(2rem, 5vw, 3rem); }
+h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+h3 { font-size: 1.15rem; font-weight: 600; }
+p { margin: 0 0 1em; }
+
+.container { width: min(var(--max), 100% - 32px); margin-inline: auto; }
+.narrow { max-width: 720px; }
+.center { text-align: center; }
+.muted { color: var(--muted); }
+.skip-link { position: absolute; left: -999px; top: 8px; background: var(--butter); padding: 8px 14px; z-index: 100; }
+.skip-link:focus { left: 8px; }
+
+/* Placeholders still to be filled in. Remove class="todo" once real content is in. */
+.todo { background: #fff7c2; outline: 2px dashed #d4b106; outline-offset: 2px; border-radius: 4px; padding: 0 4px; color: #6b5600; font-style: italic; }
+
+/* ===== Header ===== */
+.site-header { background: var(--navy); }
+.nav { display: flex; align-items: center; justify-content: space-between; min-height: 64px; gap: 12px; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.brand > img { border-radius: 50%; background: #fff; }
+.brand__name { display: flex; align-items: flex-end; gap: 4px; }
+.brand .script-word { height: 36px; width: auto; }
+.brand b, .footer-brand b { font: 700 1rem/1 "Poppins", sans-serif; color: var(--butter); letter-spacing: .06em; margin-bottom: 4px; }
+.nav-links { list-style: none; display: flex; gap: 2px; margin: 0; padding: 0; }
+.nav-links a { color: #fff; text-decoration: none; font-weight: 500; padding: 8px 10px; border-radius: 8px; font-size: .95rem; }
+.nav-links a:hover { background: rgba(255,255,255,.1); }
+@media (max-width: 520px) { .nav { justify-content: center; padding: 8px 0; } }
+
+/* ===== Buttons ===== */
+.btn { display: inline-flex; align-items: center; justify-content: center; font: 600 1rem/1 "Poppins", sans-serif; text-decoration: none; padding: 14px 22px; border-radius: 999px; transition: background .12s ease; }
+.btn--navy { background: var(--navy); color: #fff; }
+.btn--navy:hover { background: var(--navy-deep); }
+.btn--butter { background: var(--butter); color: var(--navy-deep); }
+.btn--butter:hover { background: var(--butter-deep); }
+.btn--big { font-size: 1.15rem; padding: 18px 32px; width: 100%; max-width: 360px; }
+
+/* ===== Current project ===== */
+.project { padding: 48px 0 56px; }
+.project__grid { display: grid; gap: 36px; grid-template-columns: 1.1fr 1fr; align-items: center; }
+@media (max-width: 860px) { .project__grid { grid-template-columns: 1fr; } }
+.project__media img, .photo-placeholder { border-radius: var(--radius); box-shadow: var(--shadow); width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.photo-placeholder { background: var(--navy-soft); display: grid; place-items: center; }
+.eyebrow { font: 600 .82rem/1 "Poppins", sans-serif; text-transform: uppercase; letter-spacing: .14em; color: var(--navy); opacity: .75; display: block; margin-bottom: 10px; }
+.lede { font-size: 1.15rem; color: var(--muted); }
+.fine { font-size: .9rem; color: var(--muted); margin-top: 10px; }
+
+.progress { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 20px; margin: 24px 0; }
+.progress__nums { font-size: 1.05rem; color: var(--muted); }
+.progress__nums b { font: 700 1.9rem/1 "Poppins", sans-serif; color: var(--navy-deep); margin-right: 4px; }
+.progress__bar { height: 14px; background: var(--navy-soft); border-radius: 999px; overflow: hidden; margin: 12px 0 8px; }
+.progress__bar span { display: block; height: 100%; width: 0; background: var(--navy); border-radius: 999px; transition: width .6s ease; }
+.progress__meta { display: flex; justify-content: space-between; gap: 12px; font-size: .9rem; color: var(--muted); }
+
+/* ===== Sections ===== */
+.section { padding: 56px 0; }
+.section--tint { background: var(--navy-soft); }
+.section__head { text-align: center; max-width: 700px; margin: 0 auto 28px; }
+.section__head p { color: var(--muted); }
+.grid { display: grid; gap: 22px; }
+.grid--3 { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow); }
+.card p { color: var(--muted); margin: 0; }
+
+.budget { list-style: none; padding: 0; margin: 0 0 16px; border-top: 1px solid var(--line); }
+.budget li { display: flex; justify-content: space-between; gap: 16px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.budget__total { font-weight: 600; color: var(--navy-deep); }
+
+.past { padding: 0; overflow: hidden; }
+.past img { aspect-ratio: 4 / 3; object-fit: cover; width: 100%; }
+.past h3, .past p, .past__badge { margin-inline: 20px; }
+.past__badge { display: inline-block; margin-top: 16px; margin-bottom: 8px; background: var(--butter); color: var(--navy-deep); font: 600 .8rem/1 "Poppins", sans-serif; padding: 6px 10px; border-radius: 999px; }
+.past p { margin-bottom: 20px; }
+.empty { text-align: center; color: var(--muted); }
+
+/* ===== Footer ===== */
+.site-footer { background: var(--navy-deep); color: #c9d6df; padding: 40px 0; font-size: .95rem; }
+.site-footer a { color: #fff; }
+.footer { display: grid; gap: 24px; grid-template-columns: 2fr 1fr; }
+@media (max-width: 720px) { .footer { grid-template-columns: 1fr; } }
+.footer-brand { display: flex; align-items: flex-end; gap: 6px; margin-bottom: 12px; }
+.footer-brand .script-word { height: 48px; width: auto; }
+.site-footer ul { list-style: none; padding: 0; margin: 0; }
+.site-footer li { margin-bottom: 6px; }
