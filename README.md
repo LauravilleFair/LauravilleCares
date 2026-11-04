@@ -20,4 +20,4 @@ After editing `styles.css`, bump the `?v=` number where it's linked in `index.ht
 
 ## Printed cards
 
-`print/postcard.html` is a 4x6 card for the current project (photo, headline, blurb, goal, and QR code). For a new project, edit the text and photo in that file, then ask Claude to make new PDFs. The QR code (`print/qr.png`) comes from qr-code-generator.com and opens lauravillecares.org; keep that short link active or printed cards stop working.
+`print/postcard.html` is a 4x6 card for the current project (photo, headline, blurb, goal, and QR code). For a new project, edit the text and photo in that file, then ask Claude to make new PDFs. The QR code (`print/qr.png`) is a static code from qr-code-generator.com that opens https://lauravillecares.org/ directly, so it never expires and works for every future project.
