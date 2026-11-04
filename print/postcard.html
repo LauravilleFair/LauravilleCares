@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <title>Lauraville Cares postcard</title>
+  <!--
+    Printable 4x6 card for the current project. To make one for a new project,
+    change the photo, eyebrow, headline, blurb and goal below. The QR code (qr.png) always
+    opens lauravillecares.org, so it never needs to change.
+  -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --navy: #0f3f5e; --navy-deep: #0a2c43; --butter: #f6f0a6; --ink: #1d2a33; --muted: #4a5862; --paper: #fbfaf5; }
+    @page { size: 4in 6in; margin: 0; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: #ccc; }
+    body { font-family: "Inter", sans-serif; color: var(--ink); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .card { width: 4in; height: 6in; background: var(--paper); display: flex; flex-direction: column; overflow: hidden; margin: 0 auto; }
+    @media screen { .card { margin: 24px auto; box-shadow: 0 6px 24px rgba(0,0,0,.2); } }
+    @media print { html, body { background: none; } }
+
+    .top { background: var(--navy); padding: .16in .2in .14in; display: flex; align-items: flex-end; justify-content: space-between; }
+    .brand { display: flex; align-items: flex-end; gap: 4px; }
+    .brand img { height: .38in; width: auto; }
+    .brand b { font: 700 .17in/1 "Poppins", sans-serif; color: var(--butter); letter-spacing: .06em; margin-bottom: .04in; }
+    .by { font-size: .085in; color: #d5e0e7; text-align: right; line-height: 1.3; margin-bottom: .03in; }
+
+    .photo { height: 1.95in; background: center 45% / cover no-repeat; }
+
+    .body { padding: .16in .22in 0; flex: 1; }
+    .eyebrow { font: 600 .085in/1 "Poppins", sans-serif; text-transform: uppercase; letter-spacing: .14em; color: var(--navy); margin-bottom: .06in; }
+    h1 { font: 700 .34in/1.05 "Poppins", sans-serif; color: var(--navy-deep); margin: 0 0 .07in; }
+    .blurb { font-size: .118in; line-height: 1.45; color: var(--muted); margin: 0; }
+
+    .give { display: flex; gap: .16in; align-items: center; margin: 0 .22in; padding: .14in 0 .12in; border-top: 1.5px solid #dfe3e2; }
+    .give img { width: 1.25in; height: 1.25in; flex: none; }
+    .scan { font: 700 .2in/1.1 "Poppins", sans-serif; color: var(--navy-deep); margin: 0 0 .03in; }
+    .url { font: 600 .13in/1.2 "Poppins", sans-serif; color: var(--navy); margin: 0 0 .07in; }
+    .facts { list-style: none; padding: 0; margin: 0; font-size: .1in; line-height: 1.5; color: var(--muted); }
+    .facts b { color: var(--ink); }
+
+    .foot { background: var(--navy-deep); color: #c9d6df; font-size: .078in; text-align: center; padding: .07in .2in; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="top">
+      <div class="brand"><img src="../assets/images/lauraville-script.svg" alt="Lauraville"><b>CARES</b></div>
+      <div class="by">by The Lauraville Fair<br>One project at a time</div>
+    </div>
+
+    <!-- PROJECT PHOTO -->
+    <div class="photo" style="background-image: url('../assets/images/projects/stage.webp')" role="img" aria-label="The stage at the Lauraville Fair"></div>
+
+    <div class="body">
+      <div class="eyebrow">Now funding</div>
+      <h1>Save the Stage!</h1>
+      <p class="blurb">For decades, this stage has hosted Lauraville&rsquo;s fairs, fundraisers and celebrations. Help us buy it, restore it, and keep it available to every community group at cost.</p>
+    </div>
+
+    <div class="give">
+      <img src="qr.png" alt="QR code that opens lauravillecares.org">
+      <div>
+        <p class="scan">Scan to give</p>
+        <p class="url">lauravillecares.org</p>
+        <ul class="facts">
+          <li>Goal: <b>$7,500</b></li>
+          <li>Every dollar goes to the stage</li>
+          <li>Tax-deductible</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot">The Lauraville Fair Inc. is a 501(c)(3) nonprofit &middot; EIN 88-3415032</div>
+  </div>
+</body>
+</html>

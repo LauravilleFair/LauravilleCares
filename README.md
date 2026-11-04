@@ -17,3 +17,7 @@ The progress bar is Zeffy's embedded thermometer, so it updates itself after eve
 Anything highlighted in yellow (`class="todo"`) still needs real content.
 
 After editing `styles.css`, bump the `?v=` number where it's linked in `index.html`.
+
+## Printed cards
+
+`print/postcard.html` is a 4x6 card for the current project (photo, headline, blurb, goal, and QR code). For a new project, edit the text and photo in that file, then ask Claude to make new PDFs. The QR code (`print/qr.png`) comes from qr-code-generator.com and opens lauravillecares.org; keep that short link active or printed cards stop working.
