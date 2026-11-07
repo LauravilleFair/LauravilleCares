@@ -15,8 +15,9 @@ In `index.html`, under **NAME ON THE STAGE**, change the bold number in each "of
 ## Starting a new project
 
 1. Under **PAST PROJECTS**, copy the card template, fill it in for the finished project, and delete the "first project" note.
-2. Under **CURRENT PROJECT**, replace the title, photo, intro, story, and budget. Swap the old Zeffy form name (e.g. `save-the-stage-2`) for the new one in the thermometer and in both links on the "Give" button.
-3. Put photos in `assets/images/projects/`. Keep them under ~300 KB (WebP or JPG around 1200px wide).
+2. In the `<head>` of `index.html`, update the page title, description, and the link-preview (`og:`) title, description, and image.
+3. Under **CURRENT PROJECT**, replace the title, photo, intro, story, and budget. Swap the old Zeffy form name (e.g. `save-the-stage-2`) for the new one in the thermometer and in both links on the "Give" button.
+4. Put photos in `assets/images/projects/`. Keep them under ~300 KB (WebP or JPG around 1200px wide).
 
 Anything highlighted in yellow (`class="todo"`) still needs real content.
 
