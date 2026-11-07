@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css?v=2">
+  <link rel="stylesheet" href="assets/css/styles.css?v=3">
   <!-- Zeffy's popup donation form. Any link with a zeffy-form-link attribute opens it.
        If this script fails to load, the link still opens the Zeffy page in a new tab. -->
   <script defer src="https://zeffy-scripts.s3.ca-central-1.amazonaws.com/embed-form-script.min.js" onload="window.zeffyPopup = true"></script>
@@ -73,6 +73,8 @@
           <!-- For a new project, swap "save-the-stage-2" for the new form's name in both links. -->
           <a class="btn btn--navy btn--big" href="https://www.zeffy.com/en-US/donation-form/save-the-stage-2" zeffy-form-link="https://www.zeffy.com/embed/donation-form/save-the-stage-2?modal=true" target="_blank" rel="noopener">Give to this project</a>
           <p class="fine">Tax-deductible. Secure checkout through Zeffy.</p>
+          <p class="milestone"><b>First milestone: $1,500</b> buys the stage so the restoration can start.</p>
+          <p class="fine"><a href="#name-on-stage">Give $100 or more to put your name on the stage &darr;</a></p>
         </div>
 
       </div>
@@ -99,11 +101,45 @@
         <p class="muted">If we raise more than the goal, the extra goes toward keeping the stage in good shape.</p>
 
         <h3>Can you help another way?</h3>
-        <p>Donations of materials and skills stretch every dollar. We&rsquo;re looking for lumber, paint, trailer tires, a tongue jack, help from someone handy with trailers, and a safe place to park the stage. Businesses that donate will be thanked on a sign on the stage. <a href="mailto:Info@TheLauravilleFair.org?subject=Save%20the%20Stage%20-%20I%20can%20help">Email us</a> to help out.</p>
+        <p>Donations of materials and skills stretch every dollar. We&rsquo;re looking for lumber, paint, trailer tires, a tongue jack, help from someone handy with trailers, painters and lettering help, and a safe place to park the stage. Businesses that donate materials or services will be thanked on the stage too. <a href="mailto:Info@TheLauravilleFair.org?subject=Save%20the%20Stage%20-%20I%20can%20help">Email us</a> to help out.</p>
       </div>
     </section>
 
-    <section class="section section--tint">
+    <!-- =====================================================================
+         NAME ON THE STAGE (this project only)
+         Update the "left" numbers as spots are claimed.
+         ===================================================================== -->
+    <section class="section section--tint" id="name-on-stage">
+      <div class="container">
+        <div class="section__head">
+          <h2>Put your name on the stage</h2>
+          <p>The rebuilt stage deck will carry the names and logos of the neighbors and businesses who made it happen, painted into the stage top and sealed for years of shows. Give by <b>March 31, 2027</b> to claim a spot.</p>
+        </div>
+        <div class="grid grid--3 tiers">
+          <div class="card tier">
+            <span class="tier__amt">$1,000+</span>
+            <h3>Centerpiece</h3>
+            <p>A large logo or name at the center of one of the stage&rsquo;s five sections.</p>
+            <span class="tier__left"><b>5</b> of 5 left</span>
+          </div>
+          <div class="card tier">
+            <span class="tier__amt">$250+</span>
+            <h3>Logo</h3>
+            <p>Your business or family logo on the stage top, up to 12&Prime; square.</p>
+            <span class="tier__left"><b>20</b> of 20 left</span>
+          </div>
+          <div class="card tier">
+            <span class="tier__amt">$100+</span>
+            <h3>Name</h3>
+            <p>Your name or family name on the stage top, up to 12&Prime; square.</p>
+            <span class="tier__left"><b>50</b> of 50 left</span>
+          </div>
+        </div>
+        <p class="note">After you give, we&rsquo;ll email you to confirm how your name should appear, collect your logo, and send a proof. Spots are first come, first served, and your gift is still fully tax-deductible.</p>
+      </div>
+    </section>
+
+    <section class="section">
       <div class="container">
         <div class="grid grid--3">
           <div class="card">
@@ -126,7 +162,7 @@
          PAST PROJECTS
          Newest first. Copy a card, change the text, and delete the "first project" note.
          ===================================================================== -->
-    <section class="section" id="past">
+    <section class="section section--tint" id="past">
       <div class="container">
         <div class="section__head">
           <h2>Past projects</h2>
@@ -148,7 +184,7 @@
       </div>
     </section>
 
-    <section class="section section--tint">
+    <section class="section">
       <div class="container narrow center">
         <h2>Have an idea for a project?</h2>
         <p>Beautification, equipment for a school or neighborhood group, something the whole community can use. Tell us what it is, what it costs, and who it helps.</p>

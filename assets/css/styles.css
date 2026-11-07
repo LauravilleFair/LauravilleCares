@@ -90,6 +90,14 @@ p { margin: 0 0 1em; }
 .past p { margin-bottom: 20px; }
 .empty { text-align: center; color: var(--muted); }
 
+.milestone { margin: 18px 0 4px; padding: 10px 14px; background: var(--butter); border-radius: 10px; font-size: .95rem; color: var(--navy-deep); }
+.tier { display: flex; flex-direction: column; gap: 6px; }
+.tier h3 { margin: 0; }
+.tier__amt { font: 700 1.6rem/1 "Poppins", sans-serif; color: var(--navy); }
+.tier__left { margin-top: auto; padding-top: 12px; font-size: .9rem; color: var(--muted); }
+.tier__left b { color: var(--navy-deep); }
+.note { text-align: center; color: var(--muted); max-width: 640px; margin: 24px auto 0; font-size: .95rem; }
+
 /* ===== Footer ===== */
 .site-footer { background: var(--navy-deep); color: #c9d6df; padding: 40px 0; font-size: .95rem; }
 .site-footer a { color: #fff; }

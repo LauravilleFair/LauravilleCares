@@ -8,6 +8,10 @@ Plain HTML/CSS, no build step. Everything is in `index.html`.
 
 The progress bar is Zeffy's embedded thermometer, so it updates itself after every donation. Nothing to edit.
 
+## Name-on-the-stage spots (Save the Stage! only)
+
+In `index.html`, under **NAME ON THE STAGE**, change the bold number in each "of N left" line as spots are claimed. Delete that whole section when the project ends.
+
 ## Starting a new project
 
 1. Under **PAST PROJECTS**, copy the card template, fill it in for the finished project, and delete the "first project" note.
