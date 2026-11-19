@@ -117,3 +117,21 @@ p { margin: 0 0 1em; }
 .goals b { font: 700 1.15rem/1 "Poppins", sans-serif; color: var(--navy-deep); min-width: 72px; }
 .goals .goal--funded b::after { content: " \2713"; color: #2d7a3a; }
 .goals .goal--funded span { text-decoration: line-through; color: var(--muted); }
+
+/* ===== Home page: intro, campaign cards, how-it-works steps ===== */
+.intro { padding: 56px 0 8px; }
+.intro .lede { margin-inline: auto; max-width: 620px; }
+.section--flush { padding-top: 32px; }
+.campaigns { display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); margin-top: 24px; }
+.campaign { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; display: flex; flex-direction: column; }
+.campaign img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
+.campaign__body { padding: 22px 24px 24px; display: flex; flex-direction: column; flex: 1; }
+.campaign h3 { font-size: 1.45rem; margin-bottom: .35em; }
+.campaign h3 a { color: inherit; text-decoration: none; }
+.campaign h3 a:hover { text-decoration: underline; }
+.campaign p { color: var(--muted); }
+.campaign .thermometer { margin: 4px 0 18px; margin-top: auto; }
+.campaign .btn { align-self: flex-start; }
+.steps { list-style: none; padding: 0; margin: 0; }
+.steps .card h3 { margin-top: 10px; }
+.step__num { display: inline-grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; background: var(--butter); color: var(--navy-deep); font: 700 1.05rem/1 "Poppins", sans-serif; }
