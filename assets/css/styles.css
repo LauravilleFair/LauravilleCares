@@ -107,3 +107,13 @@ p { margin: 0 0 1em; }
 .footer-brand .script-word { height: 48px; width: auto; }
 .site-footer ul { list-style: none; padding: 0; margin: 0; }
 .site-footer li { margin-bottom: 6px; }
+
+/* ===== Placeholder photo with icon, "coming soon" button, goal ladder ===== */
+.photo-placeholder--icon { color: var(--navy); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; text-align: center; padding: 24px; }
+.photo-placeholder--icon span { color: var(--muted); font-size: .95rem; }
+.btn--soon { opacity: .55; cursor: default; }
+.goals { list-style: none; padding: 0; margin: 0 0 12px; border-top: 1px solid var(--line); }
+.goals li { display: flex; gap: 16px; align-items: baseline; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.goals b { font: 700 1.15rem/1 "Poppins", sans-serif; color: var(--navy-deep); min-width: 72px; }
+.goals .goal--funded b::after { content: " \2713"; color: #2d7a3a; }
+.goals .goal--funded span { text-decoration: line-through; color: var(--muted); }
