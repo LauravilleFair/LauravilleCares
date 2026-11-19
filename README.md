@@ -6,8 +6,8 @@ Crowdfunding for Lauraville neighborhood projects, by The Lauraville Fair Inc. (
 
 | Path | What it is |
 |---|---|
-| `/` (`index.html`) | Forwards to `/stage/`. The printed Save the Stage! cards' QR code points here. |
-| `/main/` | Home page: active campaigns, how it works, past projects. Temporary address until the stage cards are retired. |
+| `/` (`index.html`) | Forwards to the featured campaign (now `/stage/`), or to `/main/` when nothing is featured. |
+| `/main/` | Home page: active campaigns, how it works, past projects. |
 | `/stage/` | Save the Stage! campaign |
 | `/3d-printing/` | Fuel the GHEMS Makers campaign |
 | `/print/` | Printable 4x6 card template |
@@ -16,9 +16,11 @@ Shared styles are in `assets/css/styles.css`; photos in `assets/images/projects/
 
 Every page has `<meta name="robots" content="noindex">` until the board approves going public; remove it then.
 
-## Moving the home page to the root (when stage cards are retired)
+## Featuring a campaign
 
-Replace `index.html` with `main/index.html`, change its canonical/og:url and logo link to `/`, change the logo and "All projects" links on campaign pages from `/main/` to `/`, and make `main/index.html` forward to `/`.
+The site root forwards to one featured campaign, so lauravillecares.org can be promoted for whatever needs the push. To change it, edit the two `/stage/` addresses in `index.html` (the `refresh` line and the `location.replace` line) plus its title and link-preview tags. With nothing to feature, point it at `/main/`.
+
+The Save the Stage! printed cards' QR code goes to the root, so keep the root on `/stage/` while those cards are out. New printed cards should use a campaign's own address (e.g. lauravillecares.org/3d-printing) so the root can change freely.
 
 ## Running a campaign
 
